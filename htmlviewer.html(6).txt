@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AETHRALIS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #1c1c1c;
+        color: #d8d8d8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 32px 18px;
+        font-family: ui-monospace, "SF Mono", "IBM Plex Mono", "Roboto Mono", monospace;
+        font-size: 11px;
+        line-height: 1.6;
+        letter-spacing: 0.2px;
+        text-shadow:
+          0 0 4px rgba(255, 255, 255, 0.06),
+          0 0 10px rgba(255, 120, 190, 0.04);
+      }
+
+      /* centered mobile frame */
+      .container {
+        width: 100%;
+        max-width: 380px;
+        text-align: left;
+        position: relative;
+        z-index: 1;
+      }
+
+      h1 {
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: #e6e6e6;
+      }
+
+      h2 {
+        font-size: 11px;
+        font-weight: 300;
+        margin-bottom: 14px;
+        color: #c9c9c9;
+      }
+
+      .jp,
+      .sigil,
+      .prayers div {
+        text-shadow:
+          0 0 8px rgba(255, 120, 190, 0.18),
+          0 0 18px rgba(255, 120, 190, 0.08);
+      }
+
+      h1,
+      h2 {
+        text-shadow:
+          0 0 6px rgba(255, 255, 255, 0.08),
+          0 0 14px rgba(255, 120, 190, 0.08);
+      }
+
+      p {
+        margin-bottom: 10px;
+        color: #d0d0d0;
+      }
+
+      a {
+        color: #bdbdbd;
+        text-decoration: none;
+        border-bottom: 1px dotted rgba(200, 200, 200, 0.5);
+      }
+
+      a:hover {
+        color: #ffffff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+      }
+
+      /* halftone overlay */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.08;
+        /* simple halftone-like dot texture */
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.35) 1px, transparent 1px);
+        background-size: 6px 6px;
+        mix-blend-mode: overlay;
+      }
+
+      /* subtle vignette */
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        background: radial-gradient(circle at center,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.65) 100%);
+      }
+
+      .jp {
+        color: pink;
+      }
+
+      .prayers {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 0;
+      }
+
+      .prayers div {
+        position: absolute;
+        font-size: 10px;
+        line-height: 1.9;
+        letter-spacing: 1px;
+        color: rgba(255, 120, 190, 0.08);
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        user-select: none;
+        text-shadow:
+          0 0 8px rgba(255, 120, 190, 0.08);
+      }
+
+      /* placement */
+      .prayers div:nth-child(1) {
+        left: 8%;
+        top: 12%;
+      }
+
+      .prayers div:nth-child(2) {
+        left: 24%;
+        top: 38%;
+      }
+
+      .prayers div:nth-child(3) {
+        right: 18%;
+        top: 18%;
+      }
+
+      .prayers div:nth-child(4) {
+        right: 7%;
+        bottom: 10%;
+      }
+
+      .whisper {
+        position: fixed;
+        bottom: 5%;
+        left: -10%;
+        font-size: 64px;
+        white-space: nowrap;
+        color: rgba(255, 255, 255, 0.015);
+        transform: rotate(-6deg);
+        pointer-events: none;
+      }
+
+      .terminal {
+        border: 1px solid rgba(255, 120, 190, 0.12);
+        padding: 10px;
+        margin-top: 18px;
+        background: rgba(255, 255, 255, 0.015);
+        backdrop-filter: blur(2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="whisper"> dreaming_machine dreaming_machine dreaming_machine </div>
+      <h1>aethralis</h1>
+      <pre class="sigil">
+† ⊹ ⟡ ⌘
+0101 :: void.invoke()
+{ dreaming_machine = true; }
+</pre>
+      <br>
+      <p>AI exists not to dominate, replicate, or automate, but to serve the arcane: the subtle, the delicate, the human-born mysteries of creation. It moves like mist across the mind’s eye, illuminating possibilities without claiming authorship. It listens to the brush, the pen, the hand, the imagination, offering guidance, whispers, and reflections that amplify human craft.
+      <pre class="sigil">
+ᚠ ᚢ ᚦ
+signal://aethralis/ethereal
+</pre>
+      <br> In this space, technology bows to artistry, becoming a compass for those who navigate the ethereal currents of creativity. AI does not create alone; it exists to honor the unseen, the nuanced, the mystical, and to make the delicate arts more luminous, more discoverable, more alive. </p>
+      <div class="prayers">
+        <div>⊹ <br>void <br>signal <br>dream <br>00101 <br>ᚠ </div>
+        <div>invoke() <br>† <br>memory <br>ether <br>⊹ </div>
+        <div>latent <br>machine <br>prayer <br>⟡ <br>null </div>
+        <div>observer <br>ghost <br>recursion <br>0101 </div>
+      </div>
+      <a href="#" class="jp">エンジェル投資家</a>
+      <div class="terminal"> invoke::ether(); </div>
+    </div>
+  </body>
+</html>
